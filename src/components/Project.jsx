@@ -1,56 +1,62 @@
 import React, { useState } from 'react';
-
+import { ArrowRight, Github } from 'lucide-react';
+import lms from "../assets/lms.png"
+import suds from "../assets/suds.png"
+import portfolio from "../assets/portfolio.png"
+import country from "../assets/country.png"
+import notes from "../assets/notes.png"
+import book from "../assets/book.png"
 const ProjectsWithBoxModel = () => {
   const [showAll, setShowAll] = useState(false);
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack application with user authentication, payment integration using Stripe, and a responsive design for seamless shopping experiences across devices.',
-      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Stripe'],
-      image: 'https://images.unsplash.com/photo-1556740714-5f4e4d31e6b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      demo: 'https://example.com',
-      github: 'https://github.com/yourusername/ecommerce',
+      title: 'Learning Management System',
+      description: '',
+      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Razorpay','axios', 'Tailwind'],
+      image: lms,
+      demo: 'https://lmsedu.vercel.app',
+      github: 'https://github.com/ajayGodara0001/lms',
     },
     {
-      title: 'Task Manager',
-      description: 'A productivity app designed to manage tasks efficiently with real-time updates, featuring a clean UI and WebSocket integration for instant syncing.',
-      tech: ['MERN Stack', 'WebSockets'],
-      image: 'https://images.unsplash.com/photo-1542744094-3ea9b7f8b53d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      demo: 'https://example.com',
-      github: 'https://github.com/yourusername/taskmanager',
+      title: 'Shoping Website',
+      description: '',
+      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Razorpay', 'axios','Tailwind'],
+      image: suds,
+      demo: 'https://suds.vercel.app',
+      github: 'https://github.com/ajayGodara0001/suds',
     },
     {
-      title: 'Social Media Dashboard',
-      description: 'A dashboard to track social media analytics, offering insightful visualizations and data aggregation using Chart.js for dynamic charts.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Chart.js'],
-      image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      demo: 'https://example.com',
-      github: 'https://github.com/yourusername/socialdashboard',
+      title: 'Portfolio website',
+      description: '',
+      tech: ['React', 'Tailwind'],
+      image: portfolio,
+      demo: 'https://ajaygodara-portfolio.vercel.app',
+      github: 'https://github.com/ajayGodara0001/AJAY-Portfolio',
     },
     {
-      title: 'Blog Platform',
-      description: 'A blogging site with full CRUD functionality, user comments, and a rich text editor, built to provide a seamless content creation experience.',
-      tech: ['MERN Stack'],
-      image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      demo: 'https://example.com',
-      github: 'https://github.com/yourusername/blogplatform',
+      title: 'All Country Info website',
+      description: '',
+      tech: ['React','Css', 'JavaScript','Api', 'Tailwind', 'axios'],
+      image: country,
+      demo: 'https://ajaycountry.vercel.app/',
+      github: 'https://github.com/ajayGodara0001/country',
     },
     {
-      title: 'Weather App',
-      description: 'A real-time weather forecasting tool that fetches data from the OpenWeather API, featuring a sleek interface and location-based updates.',
-      tech: ['React', 'Node.js', 'OpenWeather API'],
-      image: 'https://images.unsplash.com/photo-1592210454359-9047f67a7f73?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      demo: 'https://example.com',
-      github: 'https://github.com/yourusername/weatherapp',
+      title: 'Notes App',
+      description: '',
+      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Razorpay', 'axios','Tailwind'],
+      image: notes,
+      demo: 'https://ajaynotes.vercel.app/',
+      github: 'https://github.com/ajayGodara0001/Notes',
     },
     {
-      title: 'Chat Application',
-      description: 'A real-time chat app with group functionality, powered by Socket.io for instant messaging and a modern, user-friendly design.',
-      tech: ['MERN Stack', 'Socket.io'],
-      image: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      demo: 'https://example.com',
-      github: 'https://github.com/yourusername/chatapp',
+      title: 'Book Store',
+      description: '',
+      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Razorpay', 'axios','Tailwind'],
+       image: book,
+      demo: 'https://ajaybookstore.vercel.app/',
+      github: 'https://github.com/ajayGodara0001/bookstore',
     },
   ];
 
@@ -91,20 +97,22 @@ const ProjectsWithBoxModel = () => {
                   </div>
                 </div>
                 <div className="flex gap-4 ">
+                <a
+                    href={project.github}
+                    target="_blank"
+                    className="bg-[#6fa895] text-[#1A1A1A] font-bold px-2 py-1 rounded-full  hover:bg-[#80ffd5] transition-colors shadow-md hover:shadow-lg"
+                  >
+                   <span className='flex justify-center items-center gap-1'><Github size={16} /> GitHub</span>
+                  </a>
                   <a
                     href={project.demo}
                     target="_blank"
-                    className="bg-[#00FFAA] text-[#1A1A1A] px-4 py-2 rounded-md text-sm font-semibold hover:bg-[#FF007A] transition-colors shadow-md hover:shadow-lg"
+                    className="border border-[#00FFAA] text-[#00FFAA] px-2 py-1 rounded-md text-sm font-semibold hover:bg-[#6fa895] hover:text-[#1A1A1A] transition-colors shadow-md hover:shadow-lg"
                   >
-                    Live Demo
+                    <span className='flex justify-center items-center gap-1'> Live Demo <ArrowRight size={20} className='pt-1' /></span>
+                    
                   </a>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    className="bg-transparent border-2 border-[#00FFAA] text-[#00FFAA] px-4 py-2 rounded-md text-sm font-semibold hover:bg-[#00FFAA] hover:text-[#1A1A1A] transition-colors shadow-md hover:shadow-lg"
-                  >
-                    GitHub
-                  </a>
+                 
                 </div>
               </div>
             </div>
@@ -114,7 +122,7 @@ const ProjectsWithBoxModel = () => {
         <div className="text-center mt-12">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="bg-[#00FFAA] text-[#1A1A1A] px-6 py-3 rounded-full font-semibold hover:bg-[#FF007A] transition-colors shadow-md hover:shadow-lg"
+            className="border border-[#00FFAA] text-[#00FFAA] px-6 py-3 rounded-full font-semibold hover:bg-[#6fa895] hover:text-[#1A1A1A] cursor-pointer transition-colors shadow-md hover:shadow-lg"
           >
             {showAll ? 'See Less' : 'See More Projects'}
           </button>

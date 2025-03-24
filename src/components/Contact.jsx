@@ -32,7 +32,7 @@ console.log(formData);
     }
   };
   return (
-    <section id="contact" className="py-20 bg-[#1A1A1A] text-[#E0E0E0]">
+    <section id="contact"  className="py-20 xl:px-10 bg-[#1A1A1A] text-[#E0E0E0]">
       <div className=" px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Contact Me</h2>
         <div className="flex flex-col lg:flex-row gap-20 lg:gap-2">
