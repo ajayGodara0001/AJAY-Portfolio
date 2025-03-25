@@ -32,11 +32,11 @@ const Hero = () => {
         </div>
 
         {/* Image Section */}
-        <div className="lg:w-1/2  m-5 flex justify-center">
+        <div className="lg:w-1/2 m-5 flex justify-center">
           <img
             src={ajay}
             alt="Developer working on code"
-            className="w-full max-w-sm rounded-4xl h-56 lg:h-full lg:max-w-md  object-cover"
+            className=" max-w-sm rounded-4xl h-56 w-80 lg:h-84  lg:w-96  object-cover"
           />
         </div>
       </div>

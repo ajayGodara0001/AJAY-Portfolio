@@ -34,7 +34,7 @@ console.log(formData);
   return (
     <section id="contact"  className="py-20 xl:px-10 bg-[#1A1A1A] text-[#E0E0E0]">
       <div className=" px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Contact Me</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#00FFAA] text-center mb-16">Contact Me</h2>
         <div className="flex flex-col lg:flex-row gap-20 lg:gap-2">
           {/* Contact Info */}
           <div className="w-full  lg:w-9/20">
@@ -52,7 +52,7 @@ console.log(formData);
                 <span className="text-[#00FFAA]">Email:</span>{' '}
                 <a
                   href="mailto:ajaygodara84557@gmail.com"
-                  className="  hover:text-[#FF007A] transition "
+                  className="  hover:text-[#00FFAA] transition "
                 >
                   ajaygodara84557@gmail.com
                 </a>
@@ -77,7 +77,7 @@ console.log(formData);
 
           {/* Contact Form */}
           <div className="w-full lg:w-1/2 lg:pr-6 md:w-[90vh] md:pl-36 lg:pl-0 xl:pr-12 flex flex-col justify-between">
-            <h3 className="text-2xl font-bold mb-6  lg:text-left">
+            <h3 className="text-2xl font-bold mb-6  text-center lg:text-left">
               Send a Message
             </h3>
             <form  onSubmit={onSubmit} className="space-y-6 ">

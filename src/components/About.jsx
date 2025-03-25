@@ -13,16 +13,18 @@ const About = () => {
     'GitHUB',
     'REST APIs',
     'POSTMAN',
-    'Redux tool'
+    'Redux tool',
+    'JWT',
+    'CLI'
   ];
 
   return (
-    <section id="about" className="py-20 bg-[#1A1A1A] text-[#E0E0E0]">
+    <section id="about" className="py-20 bg-[#1A1A1A] text-[#00FFAA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">About Me</h2>
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
           {/* Profile Image */}
-          <div className="w-full lg:w-1/3 flex justify-center">
+          <div className="w-full hidden lg:w-1/3 lg:flex justify-center">
             <img
               src={ajay}
               alt="ajay profile"
