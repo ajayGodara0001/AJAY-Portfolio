@@ -7,19 +7,26 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full top-0 z-50 font-bold text-xl bg-gray-900  text-[#E0E0E0] border-b border-gray-200 ">
-
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16  items-center">
-          {/* Logo */}
-          <div className="text-2xl font-bold">
-            <a
-              href="#"
-              className="hover:text-[#00FFAA] hover:border-b-2 transition "
+          <div className="flex justify-between h-16 items-center">
+            {/* Logo */}
+            <div
+              className="flex items-center gap-2 text-xl font-bold cursor-pointer"
+              onClick={() => window.scrollTo(0,0)}
             >
-              AJAY
-            </a>
+              {/* Circle with 'A' */}
+              <div className="bg-[#00FFAA] text-[#1A1A1A] w-7 h-7 rounded-full flex items-center justify-center font-extrabold text-sm">
+                A
+              </div>
+              <a
+                href="#"
+                className="hover:text-[#00FFAA] hover:border-b-2 transition"
+              >
+                AJAY
+              </a>
+            </div>
           </div>
-
           {/* Desktop Links */}
           <div className="hidden md:flex gap-10">
             <a href="#" className="hover:text-[#00FFAA]  transition ">
@@ -81,8 +88,6 @@ const Navbar = () => {
           </div>
         )}
       </div>
-
-      
     </nav>
   );
 };

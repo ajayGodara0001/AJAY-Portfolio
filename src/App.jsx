@@ -6,6 +6,7 @@ import ProjectsWithBoxModel from "./components/Project";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Education from "./components/Education";
 
 const App = () => {
   const { isOpen, setIsOpen } = useContext(AppContext);
@@ -19,6 +20,7 @@ const App = () => {
       <Hero />
       <About />
       <ProjectsWithBoxModel />
+      <Education />
       <Contact />
       <Footer />
     </div>
