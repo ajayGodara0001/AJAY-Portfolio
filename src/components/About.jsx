@@ -15,7 +15,8 @@ const About = () => {
     'POSTMAN',
     'Redux tool',
     'JWT',
-    'CLI'
+    'CLI',
+    'Authentication'
   ];
 
   return (

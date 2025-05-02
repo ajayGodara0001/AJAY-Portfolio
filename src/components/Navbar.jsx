@@ -1,18 +1,22 @@
-import React, { useContext } from 'react';
-import { Menu } from 'lucide-react';
-import { AppContext } from '../context/AppContext';
-const Navbar = () => {
+import React, { useContext } from "react";
+import { Menu } from "lucide-react";
+import { AppContext } from "../context/AppContext";
 
-    const  { isOpen, setIsOpen } = useContext(AppContext)
+const Navbar = () => {
+  const { isOpen, setIsOpen } = useContext(AppContext);
 
   return (
     <nav className="fixed w-full top-0 z-50 font-bold text-xl bg-gray-900  text-[#E0E0E0] border-b border-gray-200 ">
+
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16  items-center">
           {/* Logo */}
           <div className="text-2xl font-bold">
-            <a    href="#" className="hover:text-[#00FFAA] hover:border-b-2 transition ">
-             AJAY
+            <a
+              href="#"
+              className="hover:text-[#00FFAA] hover:border-b-2 transition "
+            >
+              AJAY
             </a>
           </div>
 
@@ -77,6 +81,8 @@ const Navbar = () => {
           </div>
         )}
       </div>
+
+      
     </nav>
   );
 };

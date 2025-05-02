@@ -2,6 +2,7 @@ import { createContext, useState } from "react";
 
 export const AppContext = createContext();
 
+
 const AppContextProvider = ({ children }) => { 
     const [isOpen, setIsOpen] = useState(false);
   

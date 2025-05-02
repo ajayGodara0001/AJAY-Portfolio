@@ -5,7 +5,7 @@ import suds from "../assets/suds.png"
 import portfolio from "../assets/portfolio.png"
 import country from "../assets/country.png"
 import notes from "../assets/notes.png"
-import book from "../assets/book.png"
+
 const ProjectsWithBoxModel = () => {
   const [showAll, setShowAll] = useState(false);
 

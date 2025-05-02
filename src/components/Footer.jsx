@@ -1,5 +1,5 @@
-import React from 'react';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import React from "react";
+import { Github, Linkedin, Twitter } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear(); // Dynamically gets 2025
 
@@ -9,42 +9,61 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section */}
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-semibold text-[#00FFAA] mb-4">Ajay Godara</h3>
+            <h3 className="text-xl font-semibold text-[#00FFAA] mb-4">
+              Ajay Godara
+            </h3>
             <p className="text-[#A0A0A0] text-sm">
-              MERN Stack Developer crafting dynamic and scalable web solutions. Let’s build something amazing together!
+              MERN Stack Developer crafting dynamic and scalable web solutions.
+              Let’s build something amazing together!
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="text-center">
-            <h3 className="text-xl font-semibold text-[#00FFAA] mb-4">Quick Links</h3>
+            <h3 className="text-xl font-semibold text-[#00FFAA] mb-4">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-[#E0E0E0] hover:text-[#00FFAA] transition-colors">
+                <a
+                  href="#"
+                  className="text-[#E0E0E0] hover:text-[#00FFAA] transition-colors"
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-[#E0E0E0] hover:text-[#00FFAA] transition-colors">
+                <a
+                  href="#about"
+                  className="text-[#E0E0E0] hover:text-[#00FFAA] transition-colors"
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-[#E0E0E0] hover:text-[#00FFAA] transition-colors">
+                <a
+                  href="#projects"
+                  className="text-[#E0E0E0] hover:text-[#00FFAA] transition-colors"
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-[#E0E0E0] hover:text-[#00FFAA] transition-colors">
+                <a
+                  href="#contact"
+                  className="text-[#E0E0E0] hover:text-[#00FFAA] transition-colors"
+                >
                   Contact
                 </a>
               </li>
             </ul>
           </div>
 
-         {/* Social Links with Lucide Icons */}
-         <div className="text-center md:text-right">
-            <h3 className="text-xl font-semibold text-[#00FFAA] mb-4">Connect With Me</h3>
+          {/* Social Links with Lucide Icons */}
+          <div className="text-center md:text-right">
+            <h3 className="text-xl font-semibold text-[#00FFAA] mb-4">
+              Connect With Me
+            </h3>
             <ul className="space-y-3">
               <li>
                 <a
