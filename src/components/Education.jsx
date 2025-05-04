@@ -4,7 +4,8 @@ const Education = () => {
   const educations = [
     {
       degree: "B.tech in Computer Science & Engineering",
-      institution: "Guru Jumbheshwar University of Science & Technology",
+      institution:
+        "Guru Jumbheshwar University of Science & Technology, Hisar, Haryana",
       year: "2022 - 2026",
     },
     {
@@ -15,7 +16,7 @@ const Education = () => {
     {
       degree: "SVM Senior Secondary School, Rajasthan",
       institution: "Secondary Education",
-      year: "Percentage : 88.00%",
+      year: "Percentage : 88.00% ",
     },
   ];
 

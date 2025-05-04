@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Github } from 'lucide-react';
 import lms from "../assets/lms.png"
+import tarot from "../assets/tarot.png"
 import suds from "../assets/suds.png"
 import portfolio from "../assets/portfolio.png"
 import country from "../assets/country.png"
@@ -11,44 +12,82 @@ const ProjectsWithBoxModel = () => {
 
   const projects = [
     {
-      title: 'Learning Management System',
-      description: 'A LMS where you can explore and master a variety of technologies. And, you can become an instructor, uploading and sharing your own courses. This website is built with powerful technologies like MongoDB, React, and Node.js.',
-      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Razorpay', 'axios', 'Tailwind'],
+      title: "Tarot Card Reading",
+      description:
+        "A Tarot Card Reading website that offers users a chance to explore their future through tarot card readings. The site is designed to be user-friendly and visually appealing, making it easy for users to navigate and find the information they need.",
+      tech: [
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "Razorpay",
+        "axios",
+        "Tailwind",
+      ],
+      image: tarot,
+      demo: "https://mystictarotforyou.com/",
+      github: "https://github.com/ankit-sikarwar-001/TarrotReading",
+    },
+    {
+      title: "Learning Management System",
+      description:
+        "A LMS where you can explore and master a variety of technologies. And, you can become an instructor, uploading and sharing your own courses. This website is built with powerful technologies like MongoDB, React, and Node.js.",
+      tech: [
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "Razorpay",
+        "axios",
+        "Tailwind",
+      ],
       image: lms,
-      demo: 'https://lmsedu.vercel.app',
-      github: 'https://github.com/ajayGodara0001/lms',
+      demo: "https://lmsedu.vercel.app",
+      github: "https://github.com/ajayGodara0001/lms",
     },
     {
-      title: 'Shopping Website',
-      description: 'An engaging online store where users can explore, select, and buy products effortlessly. Built with a modern tech stack, it offers a smooth shopping experience powered by MongoDB, React, and Node.js.',
-      tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Razorpay', 'axios', 'Tailwind'],
+      title: "Shopping Website",
+      description:
+        "An engaging online store where users can explore, select, and buy products effortlessly. Built with a modern tech stack, it offers a smooth shopping experience powered by MongoDB, React, and Node.js.",
+      tech: [
+        "MongoDB",
+        "Express.js",
+        "React",
+        "Node.js",
+        "Razorpay",
+        "axios",
+        "Tailwind",
+      ],
       image: suds,
-      demo: 'https://suds.vercel.app',
-      github: 'https://github.com/ajayGodara0001/suds',
+      demo: "https://suds.vercel.app",
+      github: "https://github.com/ajayGodara0001/suds",
     },
     {
-      title: 'Portfolio website',
-      description: 'A personal portfolio showcasing my projects and skills. This stylish site displays my achievements and abilities, built using a modern stack of React, Tailwind, and JavaScript.',
-      tech: ['React', 'Tailwind', 'JavaScript'],
+      title: "Portfolio website",
+      description:
+        "A personal portfolio showcasing my projects and skills. This stylish site displays my achievements and abilities, built using a modern stack of React, Tailwind, and JavaScript.",
+      tech: ["React", "Tailwind", "JavaScript"],
       image: portfolio,
-      demo: 'https://ajaygodara-portfolio.vercel.app',
-      github: 'https://github.com/ajayGodara0001/AJAY-Portfolio',
+      demo: "https://ajaygodara-portfolio.vercel.app",
+      github: "https://github.com/ajayGodara0001/AJAY-Portfolio",
     },
     {
-      title: 'All Country Info website',
-      description: 'An informative site built with an API that provides detailed data about every country worldwide. Explore facts like population, area, currency, capital, and bordering countries to expand your global knowledge.',
-      tech: ['React', 'Css', 'JavaScript', 'Api', 'Tailwind', 'axios'],
+      title: "All Country Info website",
+      description:
+        "An informative site built with an API that provides detailed data about every country worldwide. Explore facts like population, area, currency, capital, and bordering countries to expand your global knowledge.",
+      tech: ["React", "Css", "JavaScript", "Api", "Tailwind", "axios"],
       image: country,
-      demo: 'https://ajaycountry.vercel.app/',
-      github: 'https://github.com/ajayGodara0001/country',
+      demo: "https://ajaycountry.vercel.app/",
+      github: "https://github.com/ajayGodara0001/country",
     },
     {
-      title: 'Notes App',
-      description: 'A user-friendly note management website where you can log into your account to create, organize, and manage your notes. Add notes with titles, descriptions, and tags, then update or delete them as needed. Built using a modern tech stack to ensure a smooth and efficient user experience.',
-      tech: ['MongoDB', 'Express.js', 'React', 'Node.js',  'axios', 'Tailwind'],
+      title: "Notes App",
+      description:
+        "A user-friendly note management website where you can log into your account to create, organize, and manage your notes. Add notes with titles, descriptions, and tags, then update or delete them as needed. Built using a modern tech stack to ensure a smooth and efficient user experience.",
+      tech: ["MongoDB", "Express.js", "React", "Node.js", "axios", "Tailwind"],
       image: notes,
-      demo: 'https://ajaynotes.vercel.app/',
-      github: 'https://github.com/ajayGodara0001/Notes',
+      demo: "https://ajaynotes.vercel.app/",
+      github: "https://github.com/ajayGodara0001/Notes",
     },
   ];
 
